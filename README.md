@@ -1,13 +1,14 @@
 pymy.github.io
 ==============
 
-This should be the source for the http://python.my/ site. It is community controled and contributed via
-the Git source control tool and Github, and hostes by Github Pages (https://pages.github.com/)
+This should be the source for the http://python.my/ site. It is
+community controlled and contributed via the Git source control tool
+and Github, and hosted by Github Pages (https://pages.github.com/)
 
 How to contribute content
 =========================
 
-1. Create a github account.
+1. Create a github account, if you haven't already.
 
 2. Go to https://github.com/pythonmy/pythonmy.github.io and fork it to your github account.
 
@@ -19,4 +20,3 @@ How to contribute content
 
 6. Do a pull request from your fork so that the admins of pythonmy may accept or reject your changes.
 
-7. Wait(?) for the changes to be propagated.
