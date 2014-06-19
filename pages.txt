@@ -1,8 +1,5 @@
-:template:
+-template
 template.html
 
-:parsekey:
-<!--##-->
-
-:pages:
+-pages
 md/codesnippets.md

@@ -8,19 +8,28 @@ Auto markdown pusher. Uses a text file for configuration and batch processing.
 :pages:    is filepath the markdown pages to be converted
 """
 
-import markdown
-import codecs
-import sys
+import autotemplate as at
+import re
 
-def parser(filepath):
+def parser(filepath, key="body"):
     """Parses the config file given"""
     try:
         with open(filepath, "r") as f:
-            data=''.join([line for line in list(f) if (line and line[0]!=";")]).split(":")
-            data=[line for line in data if line]
-            data={data[i]:data[i+1] for i in range(0,len(data),2)}
-            for k,v in data.items():
-                data[k]=[ele for ele in v.split("\n") if ele]
+            cur=""
+            data={}
+            for line in f :
+                if line.strip("- \n") and line[0]=="-":
+                    line=line.strip("- \n")
+                    data[line]=[]
+                    cur=line
+                elif line[0]!=":" and line[0]!=";":
+                    # ; at the start of the line for lines to ignore
+                    if not cur :
+                        cur="-"+key
+                        data[cur]=[]
+                    data[cur].append(line)
+        for k,v  in data.items() :
+            data[k]=''.join(v).strip("\n").split("\n")
         return data
     except IOError as e:
         print("Error : %s\n>File %s not found in same folder as script."%(e,filepath))
@@ -29,7 +38,7 @@ def parser(filepath):
         print("Error : %s\n>Ensure file %s is formatted properly as :key:\nvalues."%(e,filepath))
         return None
 
-def templateloader(filepath):
+def loader(filepath):
     """Gets the html contents of a template html"""
     template=""
     try:
@@ -42,38 +51,24 @@ def templateloader(filepath):
         print(">Plain site rolled out")
     return template
 
-def mdreader(filepath):
-    """Read and write a markdown content file"""
-    html=""
-    try:
-        with codecs.open(filepath, mode='r', encoding="utf-8") as f:
-            text=f.read()
-            html=markdown.markdown(text, extensions=["fenced_code"])
-            print(">File %s converted to html"%(filepath))
-    except IOError as e:
-        print("Error : %s"%(e))
-        print(">File %s not found in same folder as script."%(filepath))
-    return html
-
-def synthesis(filename,html,template, parsekey):
-    """Merge markdown converted file with template"""
-    filename=filename.split("/")[-1]
-    htmlpath="".join(filename.split(".")[:-1]+[".html"])
-    try:
-        with codecs.open(htmlpath, 'w', encoding="utf-8") as f:
-            fullfile=template.replace(parsekey, html)
-            print(fullfile,file=f)
-            return f
-    except OSError as e:
-        print("Error : %s"%(e))
-        print(">File \"%s\" is not converted into html."%(filename))
-        return None
-
-def main(configfile):
-    dex=parser(configfile)
-    tem=templateloader(dex["template"][0])
-    pages=[(page,mdreader(page)) for page in dex["pages"]]
-    pages=[synthesis(dat[0],dat[1],tem,dex["parsekey"][0]) for dat in pages if dat[1]]
-
-main("pages.txt")
-input("Press Enter to exit")
+def moveto(name,ext="html", folder=".", delimiter="-"):
+    deli=delimiter
+    name=name.split("/")[-1]
+    #dots and spaces cannot be accepted by the browser
+    #in filenames
+    name=re.sub("[\.\ ]+",deli,name)
+    name="%s/%s.%s"%(folder,deli.join(name.split(deli)[:-1]), ext)
+    return name
+    
+def synthesiser(config):
+    con=parser(config)
+    tem=loader(con["template"][0])
+    pages=con["pages"]
+    for file in pages:
+        data=at.parser(file)
+        data=at.convertor(data)
+        name=moveto(file)
+        at.merger(name, tem, data)
+   
+synthesiser("pages.txt")
+input("Completed. Enter->Exit")
