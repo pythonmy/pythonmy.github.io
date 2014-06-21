@@ -66,9 +66,13 @@ def synthesiser(config):
     pages=con["pages"]
     for file in pages:
         data=at.parser(file)
-        data=at.convertor(data)
-        name=moveto(file)
-        at.merger(name, tem, data)
-   
-synthesiser("pages.txt")
-input("Completed. Enter->Exit")
+        if data:
+            data=at.convertor(data)
+            name=moveto(file)
+            at.merger(name, tem, data)
+        else:
+            print("Failed for %s"%file)
+
+if __name__=="__main__":
+    synthesiser("pages.txt")
+    input("Completed. Enter->Exit")

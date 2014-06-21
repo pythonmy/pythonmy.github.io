@@ -5,28 +5,32 @@ import markdown
 import codecs
 import sys
 import re
+import os
 
 def parser(filepath, key="body"):
     """Parses the markdown file given"""
     try:
-        with open(filepath, "r") as f:
-            cur=""
-            data={}
-            for line in f :
-                if line.strip("- \n") and line[0]=="-":
-                    line=line.strip("- \n").split(":") #former is the key, latter is unwanted tag
-                    data[line[0]]=[[]]
-                    cur=line[0]
-                    if len(line)>1 : data[line[0]].append(line[1])
-                elif line[0]!=":" and line[0]!=";":
-                    # ; at the start of the line for lines to ignore
-                    if not cur :
-                        cur=key
-                        data[cur]=[[],""]
-                    data[cur][0].append(line)
-        for k,v  in data.items() :
-            data[k][0]=''.join(v[0])
-        return data
+        if os.path.exists(filepath):
+            with open(filepath, "r") as f:
+                cur=""
+                data={}
+                for line in f :
+                    if line.strip("- \n") and line[0]=="-":
+                        line=line.strip("- \n").split(":") #former is the key, latter is unwanted tag
+                        data[line[0]]=[[]]
+                        cur=line[0]
+                        if len(line)>1 : data[line[0]].append(line[1].strip())
+                    elif line[0]!=":" and line[0]!=";":
+                        # ; at the start of the line for lines to ignore
+                        if not cur :
+                            cur=key
+                            data[cur]=[[],""]
+                        data[cur][0].append(line)
+            for k,v  in data.items() :
+                data[k][0]=''.join(v[0])
+            return data
+        else:
+            return None
     except IOError as e:
         print("Error : %s\n>File %s not found in same folder as script."%(e,filepath))
         return None
