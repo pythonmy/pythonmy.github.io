@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Code snippets</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Python Malaysia</h1>
+        <h2></h2>
+        <a href="https://github.com/pythonmy" class="button"><small>Follow me on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <!--This is where the content goes in.-->
+            <h1 id="code-snippet-examples">Code snippet examples</h1>
+<ol>
+<li>Using comprehensions to save work of creating GUI elements in tkinter. An example of conciseness and readability in Python. </li>
+</ol>
+<p><img alt="GUI element toy" src="images/guicomp.png" /></p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span style="color: #a6e22e">from</span> <span style="color: #a6e22e">tkinter</span> <span style="color: #66d9ef">import</span> <span style="color: #f92672">*</span>
+
+<span style="color: #66d9ef">class</span> <span style="color: #a6e22e">app</span><span style="color: #f92672">:</span>
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">__init__</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f92672">=</span><span style="color: #a6e22e">Tk</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">title</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Example&quot;</span><span style="color: #f8f8f2">)</span>
+
+        <span style="color: #a6e22e">F</span><span style="color: #f92672">=</span><span style="color: #a6e22e">Frame</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #a6e22e">F</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">()</span>
+
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;Hey&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;I&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;am&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;list&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;of&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;words&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;grey&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;yellow&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;green&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;brown&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">The</span> <span style="color: #a6e22e">labelgroup</span> <span style="color: #a6e22e">records</span> <span style="color: #a6e22e">all</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">IDs</span> <span style="color: #a6e22e">of</span> <span style="color: #a6e22e">each</span> <span style="color: #a6e22e">label</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #f8f8f2">Label(F,text</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span><span style="color: #f8f8f2">,fg</span><span style="color: #f92672">=</span><span style="color: #a6e22e">color</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">width</span><span style="color: #f92672">=</span><span style="color: #ae81ff">30</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">for</span> <span style="color: #a6e22e">word</span><span style="color: #f8f8f2">,color</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">zip(self.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">,self.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">)</span><span style="color: #75715e">]</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">()</span>
+
+        <span style="color: #a6e22e">functionlist</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #f8f8f2">self.</span><span style="color: #a6e22e">reversetext</span><span style="color: #f8f8f2">,self.</span><span style="color: #a6e22e">reversecolor</span><span style="color: #75715e">]</span>
+        <span style="color: #a6e22e">buttontext</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;Reverse text&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;Reverse color&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">The</span> <span style="color: #a6e22e">buttongroup</span> <span style="color: #a6e22e">just</span> <span style="color: #a6e22e">starts</span> <span style="color: #a6e22e">all</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">buttons</span><span style="color: #f8f8f2">,</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">since</span> <span style="color: #a6e22e">we</span> <span style="color: #a6e22e">won</span><span style="color: #960050; background-color: #1e0010">&#39;</span><span style="color: #a6e22e">t</span> <span style="color: #a6e22e">alter</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">buttons</span> <span style="color: #a6e22e">themselves</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">so</span> <span style="color: #a6e22e">no</span> <span style="color: #a6e22e">need</span> <span style="color: #a6e22e">to</span> <span style="color: #a6e22e">keep</span> <span style="color: #a6e22e">their</span> <span style="color: #a6e22e">IDs</span>
+        <span style="color: #a6e22e">ButtonGroup</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #a6e22e">Button</span><span style="color: #f8f8f2">(F,width</span><span style="color: #f92672">=</span><span style="color: #ae81ff">14</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">=</span><span style="color: #a6e22e">words</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">command</span><span style="color: #f92672">=</span><span style="color: #a6e22e">func</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">(side</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">LEFT)</span> <span style="color: #f8f8f2">for</span> <span style="color: #a6e22e">func</span><span style="color: #f8f8f2">,words</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">zip(</span><span style="color: #a6e22e">functionlist</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">buttontext</span><span style="color: #f8f8f2">)</span><span style="color: #75715e">]</span>
+
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">mainloop</span><span style="color: #f8f8f2">()</span>
+
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">reversetext</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">reverse</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">word</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">zip</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+            <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">Widgets</span> <span style="color: #a6e22e">configuration</span> <span style="color: #a6e22e">can</span> <span style="color: #a6e22e">be</span> <span style="color: #a6e22e">accessed</span> <span style="color: #a6e22e">like</span> <span style="color: #a6e22e">dicts</span><span style="color: #f92672">!</span>
+            <span style="color: #a6e22e">label</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;text&quot;</span><span style="color: #75715e">]</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span>
+
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">reversecolor</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">reverse</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">word</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">zip</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+            <span style="color: #a6e22e">label</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;fg&quot;</span><span style="color: #75715e">]</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span>
+
+
+<span style="color: #a6e22e">example</span><span style="color: #f92672">=</span><span style="color: #a6e22e">app</span><span style="color: #f8f8f2">()</span>
+</pre></div>
+        </section>
+
+        <aside id="sidebar">
+            <h2>News</h2>
+            <ul>
+                <li>
+                    <a href="http://www.pycon.my/home">Mini Pycon 2014</a>
+                </li>
+            </ul>
+
+            <h2>Social Networks</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/groups/python.malaysia/">Facebook Groups</a>
+                </li>
+
+                <li>
+                    <a href="https://plus.google.com/communities/103156328895089953521">G+ Community</a>
+                </li>
+            </ul>
+            
+            <h2>Training Providers</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Pycademy">Pycademy</a>
+                </li>
+            </ul>
+
+            <h2>Malaysian Companies using Python</h2>
+            <ul>
+                <li>A certain airline company ...
+                </li>
+                <li>Quantips
+                </li>
+                <li>Century Software Malaysia
+                </li>
+                <li>Devtune IT Solutions
+                </li>
+                <li>ACE EdVenture Digital
+                </li>
+                <li>TIME dotCom Berhad
+                </li>
+                <li>Tuxuri
+                </li>
+                <li>SolutionX
+                </li>
+                <li>
+                    <a href="http://www.quora.com/Which-Malaysian-companies-are-using-Python">More ...</a>
+                </li>
+            </ul>
+
+            <h2>Malaysians using Python</h2>
+            <ul>
+                <li>Ditesh Gathani</li>
+                <li>Talat Fakhri</li>
+                <li>Ng Swee Meng</li>
+                <li>Renyi Khor</li>
+                <li>Paul Ooi</li>
+                <li>Ang Chin Han</li>
+                <li>Kok Hoor Chew</li>
+                <li>Seh Hui Leong</li>
+                <li>
+                    <a href="http://www.quora.com/Which-Malaysian-companies-are-using-Python">More ...</a>
+                </li>
+            </ul>
+        </aside>
+      </div>
+    </div>
+
+
+  </body>
+  <footer>
+    
+  </footer>
+</html>
+
