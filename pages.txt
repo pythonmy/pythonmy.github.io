@@ -3,5 +3,3 @@ template.html
 
 -pages
 md/codesnippets.md
-;skulptsnip.html has been edited 
-;md/skulptsnip.md
