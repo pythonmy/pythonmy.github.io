@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -29,51 +29,49 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!--This is where the content goes in.-->
-          <h1>Code snippet examples</h1>
+            <h1 id="code-snippet-examples">Code snippet examples</h1>
 <ol>
 <li>Using comprehensions to save work of creating GUI elements in tkinter. An example of conciseness and readability in Python. </li>
 </ol>
 <p><img alt="GUI element toy" src="images/guicomp.png" /></p>
-<pre><code class="Python">
-from tkinter import *
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span style="color: #a6e22e">from</span> <span style="color: #a6e22e">tkinter</span> <span style="color: #66d9ef">import</span> <span style="color: #f92672">*</span>
 
-class app:
-    def __init__(self):
-        self.root=Tk()
-        self.root.title(&quot;Example&quot;)
+<span style="color: #66d9ef">class</span> <span style="color: #a6e22e">app</span><span style="color: #f92672">:</span>
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">__init__</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f92672">=</span><span style="color: #a6e22e">Tk</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">title</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Example&quot;</span><span style="color: #f8f8f2">)</span>
 
-        F=Frame(self.root)
-        F.pack()
+        <span style="color: #a6e22e">F</span><span style="color: #f92672">=</span><span style="color: #a6e22e">Frame</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #a6e22e">F</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">()</span>
 
-        self.listofwords=[&quot;Hey&quot;,&quot;I&quot;,&quot;am&quot;,&quot;a&quot;,&quot;list&quot;,&quot;of&quot;,&quot;words&quot;]
-        self.listofcolors=[&quot;blue&quot;,&quot;red&quot;,&quot;grey&quot;,&quot;white&quot;,&quot;yellow&quot;,&quot;green&quot;,&quot;brown&quot;]
-        #The labelgroup records all the IDs of each label
-        self.LabelGroup=[Label(F,text=word,fg=color, bg=&quot;black&quot;, width=30) for word,color in zip(self.listofwords,self.listofcolors)]
-        for label in self.LabelGroup: label.pack()
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;Hey&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;I&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;am&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;list&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;of&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;words&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;blue&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;red&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;grey&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;white&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;yellow&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;green&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;brown&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">The</span> <span style="color: #a6e22e">labelgroup</span> <span style="color: #a6e22e">records</span> <span style="color: #a6e22e">all</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">IDs</span> <span style="color: #a6e22e">of</span> <span style="color: #a6e22e">each</span> <span style="color: #a6e22e">label</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #f8f8f2">Label(F,text</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span><span style="color: #f8f8f2">,fg</span><span style="color: #f92672">=</span><span style="color: #a6e22e">color</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;black&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">width</span><span style="color: #f92672">=</span><span style="color: #ae81ff">30</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">for</span> <span style="color: #a6e22e">word</span><span style="color: #f8f8f2">,color</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">zip(self.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">,self.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">)</span><span style="color: #75715e">]</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f92672">:</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">()</span>
 
-        functionlist=[self.reversetext,self.reversecolor]
-        buttontext=[&quot;Reverse text&quot;, &quot;Reverse color&quot;]
-        #The buttongroup just starts all the buttons,
-        #since we won't alter the buttons themselves, so no need to keep their IDs
-        ButtonGroup=[Button(F,width=14, text=words, command=func).pack(side=LEFT) for func,words in zip(functionlist, buttontext)]
+        <span style="color: #a6e22e">functionlist</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #f8f8f2">self.</span><span style="color: #a6e22e">reversetext</span><span style="color: #f8f8f2">,self.</span><span style="color: #a6e22e">reversecolor</span><span style="color: #75715e">]</span>
+        <span style="color: #a6e22e">buttontext</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;Reverse text&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;Reverse color&quot;</span><span style="color: #75715e">]</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">The</span> <span style="color: #a6e22e">buttongroup</span> <span style="color: #a6e22e">just</span> <span style="color: #a6e22e">starts</span> <span style="color: #a6e22e">all</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">buttons</span><span style="color: #f8f8f2">,</span>
+        <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">since</span> <span style="color: #a6e22e">we</span> <span style="color: #a6e22e">won</span><span style="color: #960050; background-color: #1e0010">&#39;</span><span style="color: #a6e22e">t</span> <span style="color: #a6e22e">alter</span> <span style="color: #a6e22e">the</span> <span style="color: #a6e22e">buttons</span> <span style="color: #a6e22e">themselves</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">so</span> <span style="color: #a6e22e">no</span> <span style="color: #a6e22e">need</span> <span style="color: #a6e22e">to</span> <span style="color: #a6e22e">keep</span> <span style="color: #a6e22e">their</span> <span style="color: #a6e22e">IDs</span>
+        <span style="color: #a6e22e">ButtonGroup</span><span style="color: #f92672">=</span><span style="color: #75715e">[</span><span style="color: #a6e22e">Button</span><span style="color: #f8f8f2">(F,width</span><span style="color: #f92672">=</span><span style="color: #ae81ff">14</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">=</span><span style="color: #a6e22e">words</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">command</span><span style="color: #f92672">=</span><span style="color: #a6e22e">func</span><span style="color: #f8f8f2">).</span><span style="color: #a6e22e">pack</span><span style="color: #f8f8f2">(side</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">LEFT)</span> <span style="color: #f8f8f2">for</span> <span style="color: #a6e22e">func</span><span style="color: #f8f8f2">,words</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">zip(</span><span style="color: #a6e22e">functionlist</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">buttontext</span><span style="color: #f8f8f2">)</span><span style="color: #75715e">]</span>
 
-        self.root.mainloop()
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">root</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">mainloop</span><span style="color: #f8f8f2">()</span>
 
-    def reversetext(self):
-        self.listofwords.reverse()
-        for label,word in zip(self.LabelGroup,self.listofwords):
-            #Widgets configuration can be accessed like dicts!
-            label[&quot;text&quot;]=word
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">reversetext</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">reverse</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">word</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">zip</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofwords</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+            <span style="color: #960050; background-color: #1e0010">#</span><span style="color: #a6e22e">Widgets</span> <span style="color: #a6e22e">configuration</span> <span style="color: #a6e22e">can</span> <span style="color: #a6e22e">be</span> <span style="color: #a6e22e">accessed</span> <span style="color: #a6e22e">like</span> <span style="color: #a6e22e">dicts</span><span style="color: #f92672">!</span>
+            <span style="color: #a6e22e">label</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;text&quot;</span><span style="color: #75715e">]</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span>
 
-    def reversecolor(self):
-        self.listofcolors.reverse()
-        for label,word in zip(self.LabelGroup,self.listofcolors):
-            label[&quot;fg&quot;]=word
+    <span style="color: #a6e22e">def</span> <span style="color: #a6e22e">reversecolor</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+        <span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">reverse</span><span style="color: #f8f8f2">()</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #a6e22e">label</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">word</span> <span style="color: #66d9ef">in</span> <span style="color: #a6e22e">zip</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">LabelGroup</span><span style="color: #f8f8f2">,</span><span style="color: #a6e22e">self</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">listofcolors</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">:</span>
+            <span style="color: #a6e22e">label</span><span style="color: #75715e">[</span><span style="color: #e6db74">&quot;fg&quot;</span><span style="color: #75715e">]</span><span style="color: #f92672">=</span><span style="color: #a6e22e">word</span>
 
 
-example=app()
-
-</code></pre>
+<span style="color: #a6e22e">example</span><span style="color: #f92672">=</span><span style="color: #a6e22e">app</span><span style="color: #f8f8f2">()</span>
+</pre></div>
         </section>
 
         <aside id="sidebar">
@@ -145,5 +143,8 @@ example=app()
 
 
   </body>
+  <footer>
+    
+  </footer>
 </html>
 
