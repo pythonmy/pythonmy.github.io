@@ -29,7 +29,7 @@
             <div class="masthead">
                 <h1>Python Malaysia </h1>
                 <ul class="nav nav-justified">
-                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Training Providers</a></li>
                     <li><a href="#">Job Opportunities</a></li>
@@ -52,7 +52,7 @@
                     <p class="text-danger">In no particular order: </p>
                     <ul id="companies">
                     </ul>
-                    <p><a class="btn btn-primary" href="/company.html" role="button">More companies &raquo;</a></p>
+                    <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
                 </div>
                 
                 <div class="col-lg-4">
@@ -60,14 +60,14 @@
                     <p class="text-danger">In no particular order: </p>
                     <ul id="people">
                     </ul>
-                    <p><a class="btn btn-primary" href="/people.html" role="button">More dev people &raquo;</a></p>
+                    <p><a class="btn btn-primary" href="people.html" role="button">More dev people &raquo;</a></p>
                 </div>
               
                 <div class="col-lg-4">
                     <h2>Events</h2>
                     <ul id="news">
                     </ul>
-                    <p><a class="btn btn-primary" href="#" role="button">More events &raquo;</a></p>
+                    <p><a class="btn btn-primary" href="news.html" role="button">More events &raquo;</a></p>
                 </div>
             </div>
 
@@ -83,11 +83,11 @@
         <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
-        <script language="javascript" src="/javascripts/main.js"></script>
+        <script src="javascripts/main.js"></script>
         <script>
             $(document).ready(function() {
-                var hdbartpls = ['/javascripts/companyportlet.handlebars', '/javascripts/peopleportlet.handlebars', '/javascripts/newsportlet.handlebars'];
-                var sources = ['/resources/company.json', '/resources/people.json', '/resources/news.json'];
+                var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
+                var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
                 var portletels = ['#companies', '#people', '#news'];
 
                 renderPortlet(sources[0], hdbartpls[0], portletels[0]);
