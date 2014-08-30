@@ -16,7 +16,9 @@ How to contribute content
 
 4. Create, edit, fix, go wild.
 
-5. git add, commit and push to *your* github. Ensure that different set of changes are commited separate commits.
+5. Checkout the edited pages by issuing `python -m SimpleHTTPServer` in the main directory.
 
-6. Do a pull request from your fork so that the admins of pythonmy may accept or reject your changes.
+6. git add, commit and push to *your* github. Ensure that different set of changes are commited separate commits.
+
+7. Do a pull request from your fork so that the admins of pythonmy may accept or reject your changes.
 
