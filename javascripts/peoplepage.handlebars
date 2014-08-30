@@ -1,0 +1,18 @@
+{{!-- not sure if having pictures and social urls are acceptable for everyone
+{{#each people }}
+    <div class="col-lg-3">
+        <p class="well">
+            {{#compare this.pic "!==" ""}}
+                <img src="{{ this.pic }}" height="100" width="100"><br />
+            {{/compare}}
+            <a href="{{ this.url }}">{{ this.name }}</a>
+        </p>
+    </div>
+{{/each}}
+--}}
+
+<ul>
+    {{#each people}}
+        <li>{{ this.name }}</li><br />
+    {{/each}}
+</ul>
