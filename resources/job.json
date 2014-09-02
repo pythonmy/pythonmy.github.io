@@ -1,0 +1,35 @@
+{
+   "job": [
+        {
+            "name": "Jobtreet Malaysia",
+            "url": "http://job-search.jobstreet.com.my/malaysia/job-opening.php?key=python&location=&specialization=191%2C192%2C193&salary=&area=1&src=12",
+            "type": "local"
+        },
+        {
+            "name": "Monster.com.my",
+            "url": "http://jobsearch.monster.com.my/searchresult.html?fts=python",
+            "type": "local"
+        },
+        {
+            "name": "Stackoverflow.com",
+            "url": "https://careers.stackoverflow.com/jobs/tag/python",
+            "type": "world"
+        },
+        {
+            "name": "Freelancer.com",
+            "url": "https://www.freelancer.com/jobs/Python/1/",
+            "type": "freelance"
+        },
+        {
+            "name": "Elance.com",
+            "url": "https://www.elance.com/r/jobs/q-python/",
+            "type": "freelance"
+        },
+        {
+            "name": "Guru.com",
+            "url": "http://www.guru.com/d/jobs/q/python/",
+            "type": "freelance"
+        }
+   ]
+}
+

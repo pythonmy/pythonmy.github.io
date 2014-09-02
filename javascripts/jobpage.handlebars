@@ -1,0 +1,24 @@
+<h2>Full-time Employment in Malaysia</h2>
+    <ul>
+    {{#each job }}
+        {{#compare this.type "local"}}
+            <li><a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+        {{/compare}}
+    {{/each}}
+    </ul>
+<h2>Full-time Employment WorldWide</h2>
+    <ul>
+    {{#each job }}
+        {{#compare this.type "world"}}
+            <li><a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+        {{/compare}}
+    {{/each}}
+    </ul>
+<h2>Freelance Python Jobs</h2>
+    <ul>
+    {{#each job }}
+        {{#compare this.type "freelance"}}
+                <li><a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+        {{/compare}}
+    {{/each}}
+    </ul>
