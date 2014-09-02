@@ -36,9 +36,9 @@
             "width": 100
         },
         {
-            "name": "TIME dotcom Bhd.",
-            "logo": "http://www.time.com.my/images/header/logo.gif",
-            "url": "http://www.time.com.my",
+            "name": "SolutionX Software Sdn. Bhd.",
+            "logo": "http://www.solutionx.com.my/img/logofit.gif",
+            "url": "http://www.solutionx.com.my",
             "height": 100,
             "width": 200
         },
@@ -46,14 +46,21 @@
             "name": "Logistics Consulting Asia",
             "logo": "http://logisticsconsulting.asia/en/wp-content/themes/default/images/lca_logo_v2.gif",
             "url": "http://logisticsconsulting.asia/en/",
-            "height": 100,
+            "height": 50,
             "width": 220
         },
         {
-            "name": "SolutionX Software Sdn. Bhd.",
-            "logo": "http://www.solutionx.com.my/img/logofit.gif",
-            "url": "http://www.solutionx.com.my",
-            "height": 100,
+            "name": "PyCademy - KHCC Sdn. Bhd.",
+            "logo": "http://pycademy.net/static/img/logo.png",
+            "url": "http://pycademy.net",
+            "height": 50,
+            "width": 220
+        },
+        {
+            "name": "TIME dotcom Bhd.",
+            "logo": "http://www.time.com.my/images/header/logo.gif",
+            "url": "http://www.time.com.my",
+            "height": 35,
             "width": 200
         }
     ]
