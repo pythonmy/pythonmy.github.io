@@ -87,3 +87,7 @@ body {
     padding-left: 0;
   }
 }
+
+#company-profiles  > div > p {
+    text-align: center;
+}

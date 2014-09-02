@@ -1,0 +1,5 @@
+{{#each people }}
+    {{#compare @index "<" 5}}
+        <li>{{ this.name }}</li>
+    {{/compare}}
+{{/each}}

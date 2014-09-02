@@ -1,0 +1,5 @@
+{{#each news }}
+    {{#compare @index "<" 5}}
+        <li><a href="{{ this.url }}">{{ this.name }}</a></li>
+    {{/compare}}
+{{/each}}

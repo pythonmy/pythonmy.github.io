@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Python Malaysia</title>
+        <title>Python Malaysia</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cerulean/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cerulean/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="stylesheets/justified-nav.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="stylesheets/justified-nav.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+    <body>
 
-  <body>
+        <div class="container">
 
-    <div class="container">
-
-      <div class="masthead">
-        <h1 class="text-muted">Python Malaysia </h1>
-        <ul class="nav nav-justified">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Training Providers</a></li>
-          <li><a href="#">Job Opportunities</a></li>
-          <li><a href="about.html">About Python</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Welcome to Python Malaysia!</h1>
-        <p class="lead">Welcome to Python Malaysia User Group Portal. We are users of the Python Programming Language mostly based in Kuala Lumpur, Malaysia.</p>
-        <p><a class="btn btn-lg btn-success" href="about.html" role="button">Get started on Python today!</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-            <h2>Malaysian companies using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-          <p>
-            <ul>
-                <li>A certain airline company.....</li>
-                <li>Quantips</li>
-                <li>Century Software Malaysia</li>
-                <li>Devtune IT Solutions</li>
-                <li>ACE EdVenture Digital</li>
-          </p>
-          <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Malaysians using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-            <p>
-                <ul>
-                    <li>Ditesh Gathani</li>
-                    <li>Low Kian Seong</li>
-                    <li>Talat Fakhri</li>
-                    <li>Ng Swee Meng</li>
-                    <li>Renyi Khor</li>
+            <div class="masthead">
+                <h1>Python Malaysia </h1>
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Training Providers</a></li>
+                    <li><a href="#">Job Opportunities</a></li>
+                    <li><a href="about.html">About Python</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </p>
-          <p><a class="btn btn-primary" href="#" role="button">More dev people &raquo;</a></p>
-       </div>
-      <div class="col-lg-4">
-          <h2>Events</h2>
-          <p>
-            <ul>
-                <li><a href="http://www.pycon.my/home">Mini PyCon 2014 Malaysia</a></li>
-            </ul>
-          </p>
-          <p><a class="btn btn-primary" href="#" role="button">More events &raquo;</a></p>
-        </div>
-      </div>
+            </div>
 
-      <!-- Site footer -->
-      <div class="footer">
-        <p>&copy; 2014 - Python Malaysia User Group</p>
-      </div>
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <h1>Welcome to Python Malaysia!</h1>
+                <p class="lead">Welcome to Python Malaysia User Group Portal. We are users of the Python Programming Language mostly based in Kuala Lumpur, Malaysia.</p>
+                <p><a class="btn btn-lg btn-success" href="about.html" role="button">Get started on Python today!</a></p>
+            </div>
 
-    </div> <!-- /container -->
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Malaysian companies using Python</h2>
+                    <p class="text-danger">In no particular order: </p>
+                    <ul id="companies">
+                    </ul>
+                    <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h2>Malaysians using Python</h2>
+                    <p class="text-danger">In no particular order: </p>
+                    <ul id="people">
+                    </ul>
+                    <p><a class="btn btn-primary" href="people.html" role="button">More dev people &raquo;</a></p>
+                </div>
+              
+                <div class="col-lg-4">
+                    <h2>Events</h2>
+                    <ul id="news">
+                    </ul>
+                    <p><a class="btn btn-primary" href="news.html" role="button">More events &raquo;</a></p>
+                </div>
+            </div>
+
+            <!-- Site footer -->
+            <div class="footer">
+                <p>&copy; 2014 - Python Malaysia User Group</p>
+            </div>
+        
+        </div> <!-- /container -->
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
-  </body>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
+        <script src="javascripts/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
+                var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
+                var portletels = ['#companies', '#people', '#news'];
+
+                renderPortlet(sources[0], hdbartpls[0], portletels[0]);
+                renderPortlet(sources[1], hdbartpls[1], portletels[1]);
+                renderPortlet(sources[2], hdbartpls[2], portletels[2]);
+            });
+        </script>
+    </body>
 </html>
