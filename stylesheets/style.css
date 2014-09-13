@@ -1,0 +1,215 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+/* Icon */
+
+.icon {
+	position: relative;
+}
+
+.icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+.icon.circle {
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: 0;
+	border-radius: 100%;
+	display: inline-block;
+	font-size: 1.55em;
+	height: 2.25em;
+	left: 0;
+	line-height: 2.25em;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+	width: 2.25em;
+}
+
+.icon.circle:hover {
+	top: -0.2em;
+}
+
+.icon.circle.fa-twitter {
+	background: #70aecd;
+	color: white;
+}
+
+.icon.circle.fa-twitter:hover {
+	background: #7fb7d2;
+}
+
+.icon.circle.fa-facebook {
+	background: #7490c3;
+	color: white;
+}
+
+.icon.circle.fa-facebook:hover {
+	background: #829bc9;
+}
+
+.icon.circle.fa-google-plus {
+	background: #db6b67;
+	color: white;
+}
+
+.icon.circle.fa-google-plus:hover {
+	background: #df7b77;
+}
+
+.icon.circle.fa-github {
+	background: #dcad8b;
+	color: white;
+}
+
+.icon.circle.fa-github:hover {
+	background: #e1b89b;
+}
+
+.icon.circle.fa-dribbble {
+	background: #da83ae;
+	color: white;
+}
+
+.icon.circle.fa-dribbble:hover {
+	background: #df93b8;
+}
+
+.icon.featured {
+	cursor: default;
+	display: block;
+	margin: 0 0 1.5em 0;
+	opacity: 0.35;
+	text-align: center;
+}
+
+.icon.featured:before {
+	font-size: 5em;
+	line-height: 1em;
+}
+
+.icon > .label {
+	display: none;
+}
+
+/* Footer */
+
+.footer {
+	color: #000000;
+	padding: 5em 5em 10em 5em;
+	text-align: center;
+}
+
+.footer .copyright {
+	font-size: 0.8em;
+	line-height: 1em;
+}
+
+.footer .copyright a {
+	color: inherit;
+}
+
+.footer .copyright li {
+	display: inline-block;
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: dotted 1px;
+}
+
+.footer .copyright li:first-child {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* List */
+
+ol.default {
+	list-style: decimal;
+	padding-left: 1.25em;
+}
+
+ol.default li {
+	padding-left: 0.25em;
+}
+
+ul.default {
+	list-style: disc;
+	padding-left: 1em;
+}
+
+ul.default li {
+	padding-left: 0.5em;
+}
+
+ul.icons {
+	cursor: default;
+}
+
+ul.icons li {
+	display: inline-block;
+	line-height: 1em;
+	padding-left: 0.5em;
+}
+
+ul.icons li:first-child {
+	padding-left: 0;
+}
+
+ul.featured-icons {
+	cursor: default;
+	margin: -0.75em 0 0 0;
+	opacity: 0.35;
+	overflow: hidden;
+	position: relative;
+}
+
+ul.featured-icons li {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 50%;
+}
+
+ul.featured-icons li .icon {
+	display: inline-block;
+	font-size: 6.25em;
+	height: 1.25em;
+	line-height: 1.25em;
+	width: 1em;
+}
+
+ul.buttons {
+	cursor: default;
+}
+
+ul.buttons:last-child {
+	margin-bottom: 0;
+}
+
+ul.buttons li {
+	display: inline-block;
+	padding: 0 0 0 1.5em;
+}
+
+ul.buttons li:first-child {
+	padding: 0;
+}
+
+ul.buttons.vertical li {
+	display: block;
+	padding: 1.5em 0 0 0;
+}
+
+ul.buttons.vertical li:first-child {
+	padding: 0;
+}
