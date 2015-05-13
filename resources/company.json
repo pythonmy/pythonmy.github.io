@@ -63,12 +63,17 @@
             "height": 35,
             "width": 200
         },
-		{
-		    "name": "OnApp KL",
-			"logo": "/images/11077810_10152935885779900_1144024635_n.jpg",
-			"url": "http://onapp.com/",
-			"height": 50,
-			"width": 200
-		}
+        {
+            "name": "OnApp KL",
+            "logo": "/images/11077810_10152935885779900_1144024635_n.jpg",
+            "url": "http://onapp.com/",
+            "height": 50,
+            "width": 200
+        },
+        {
+            "name": "Infinite Code",
+            "logo": "http://infinite-code.com/img/icon.png",
+            "url": "http://infinite-code.com/"
+        }
     ]
 }
