@@ -73,7 +73,10 @@
         {
             "name": "Infinite Code",
             "logo": "http://infinite-code.com/img/icon.png",
-            "url": "http://infinite-code.com/"
+            "url": "http://infinite-code.com/",
+            "height": 100,
+            "width": 100
+
         }
     ]
 }
