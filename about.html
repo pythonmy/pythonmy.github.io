@@ -11,10 +11,11 @@
     <title>About Python</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cerulean/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/justified-nav.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,20 +32,11 @@
 
     <div class="container">
 
-      <div class="masthead">
-        <h1>Python Malaysia</h1>
-        <ul class="nav nav-justified">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Training Providers</a></li>
-          <li><a href="jobs.html">Job Opportunities</a></li>
-          <li class="active"><a href="about.html">About Python</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <!-- Site Header -->
+      <div class="masthead" id="header"></div>
 
       <!-- Jumbotron -->
-    <div class="jumbotron">
+      <div class="jumbotron">
         <h1>What is <a href="https://www.python.org/" target="_blank">Python</a>?</h1>
         <p class="lead">Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.</p>
         <p>Python runs on <a href="https://www.python.org/downloads/windows/" target="_blank">Windows</a>, <a href="https://www.python.org/downloads/source/" target="_blank">Linux/Unix</a>, <a href="https://www.python.org/downloads/mac-osx/" target="_blank">Mac OS X</a>, and has been ported to the <a href="http://www.jython.org/" target="_blank">Java</a> and <a href="http://ironpython.net/" target="_blank">.NET</a> virtual machines.</p>
@@ -90,20 +82,24 @@
       </div>
 
       <!-- Site footer -->
-      <div class="footer">
-        <p>&copy; 2014 - Python Malaysia User Group</p>
-      </div>
+      <div class="footer" id="footer"></div>
 
     </div> <!-- /container -->
 
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
         <script src="javascripts/main.js"></script>
         <script>
             $(document).ready(function() {
+                $("#header").load("static/header.html", function(){
+                    $('.nav > li').removeClass('active');
+                    $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+                });
+                $("#footer").load("static/footer.html");
+
                 var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
                 var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
                 var portletels = ['#companies', '#people', '#news'];
