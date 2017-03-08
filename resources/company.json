@@ -1,13 +1,6 @@
 {
     "companies" : [
         {
-            "name": "A certain airline company .....",
-            "logo": "",
-            "url": "",
-            "height": 100,
-            "width": 100
-        },
-        {
             "name": "Quantips Sdn. Bhd.",
             "logo": "https://pythonmy.github.io/images/fav.jpg",
             "url": "https://twitter.com/quantips",
