@@ -2,7 +2,7 @@
    "people": [
         {
             "name": "Ditesh Gathani",
-            "url": "https://twitter.com/ditesh",
+            "url": "",
             "pic": "http://ditesh.gathani.org/blog/wp-content/uploads/ditesh_reasonably_small.png"
         },
         {
@@ -44,6 +44,11 @@
             "name": "Seh Hui Leong",
             "url": "",
             "pic": ""
+        },
+        {
+            "name": "CY Lim",
+            "url": "https://twitter.com/cylim226",
+            "pic": "https://pbs.twimg.com/profile_images/521183336794824704/HoywC1tt.jpeg"
         }
    ]
 }

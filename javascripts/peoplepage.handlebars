@@ -1,18 +1,15 @@
-{{!-- not sure if having pictures and social urls are acceptable for everyone
 {{#each people }}
-    <div class="col-lg-3">
-        <p class="well">
-            {{#compare this.pic "!==" ""}}
-                <img src="{{ this.pic }}" height="100" width="100"><br />
-            {{/compare}}
-            <a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+    <div class="col-lg-2">
+        <p class="well text-center">
+            <img src="{{ this.pic }}" height="100" width="100" onError="this.onerror=null;this.src='/static/images/profile.png';" />
+            <br />
+
+            {{#if this.url}}
+                <a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+            {{else}}
+                {{ this.name }}
+            {{/if}}
+                
         </p>
     </div>
 {{/each}}
---}}
-
-<ul>
-    {{#each people}}
-        <li>{{ this.name }}</li><br />
-    {{/each}}
-</ul>
