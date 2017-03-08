@@ -47,29 +47,8 @@
         </div>
     </div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-            <h2>Malaysian companies using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-            <ul id="companies">
-            </ul>
-            <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Malaysians using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-            <ul id="people">
-            </ul>
-          <p><a class="btn btn-primary" href="people.html" role="button">More dev people &raquo;</a></p>
-       </div>
-      <div class="col-lg-4">
-          <h2>Events</h2>
-          <ul id="news">
-          </ul>
-          <p><a class="btn btn-primary" href="news.html" role="button">More events &raquo;</a></p>
-        </div>
-      </div>
+      <!-- Section Columns -->
+      <div class="section" id="section"></div>
 
       <!-- Site footer -->
       <div class="footer" id="footer"></div>
@@ -82,23 +61,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
         <script src="javascripts/main.js"></script>
+        <script src="javascripts/view.js"></script>
+        
         <script>
             $(document).ready(function() {
-                $("#header").load("static/header.html", function(){
-                    $('.nav > li').removeClass('active');
-                    $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
-                });
-                $("#footer").load("static/footer.html");
-
-                var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
-                var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
-                var portletels = ['#companies', '#people', '#news'];
-
-                renderPortlet(sources[0], hdbartpls[0], portletels[0]);
-                renderPortlet(sources[1], hdbartpls[1], portletels[1]);
-                renderPortlet(sources[2], hdbartpls[2], portletels[2]);
-
-                renderPortlet(sources[1], 'javascripts/peoplepage.handlebars', '#people-profiles');
+                populateView();
+                renderPortlet('resources/people.json', 'javascripts/peoplepage.handlebars', '#people-profiles');
             });
         </script>
   </body>
