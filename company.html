@@ -11,10 +11,11 @@
     <title>Companies Using Python</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cerulean/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/justified-nav.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,17 +32,8 @@
 
     <div class="container">
 
-      <div class="masthead">
-        <h1>Python Malaysia </h1>
-        <ul class="nav nav-justified">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Training Providers</a></li>
-          <li><a href="jobs.html">Job Opportunities</a></li>
-          <li><a href="about.html">About Python</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <!-- Site Header -->
+      <div class="masthead" id="header"></div>
 
       <!-- Jumbotron -->
       <!-- <div class="jumbotron">
@@ -55,54 +47,26 @@
         </div>
     </div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-            <h2>Malaysian companies using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-            <ul id="companies">
-            </ul>
-            <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Malaysians using Python</h2>
-            <p class="text-danger">In no particular order: </p>
-            <ul id="people">
-            </ul>
-          <p><a class="btn btn-primary" href="people.html" role="button">More dev people &raquo;</a></p>
-       </div>
-      <div class="col-lg-4">
-          <h2>Events</h2>
-          <ul id="news">
-          </ul>
-          <p><a class="btn btn-primary" href="news.html" role="button">More events &raquo;</a></p>
-        </div>
-      </div>
+      <!-- Section Columns -->
+      <div class="section" id="section"></div>
 
       <!-- Site footer -->
-      <div class="footer">
-        <p>&copy; 2014 - Python Malaysia User Group</p>
-      </div>
+      <div class="footer" id="footer"></div>
 
     </div> <!-- /container -->
 
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
         <script src="javascripts/main.js"></script>
+        <script src="javascripts/view.js"></script>
+
         <script>
             $(document).ready(function() {
-                var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
-                var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
-                var portletels = ['#companies', '#people', '#news'];
-
-                renderPortlet(sources[0], hdbartpls[0], portletels[0]);
-                renderPortlet(sources[1], hdbartpls[1], portletels[1]);
-                renderPortlet(sources[2], hdbartpls[2], portletels[2]);
-
-                renderPortlet(sources[0], 'javascripts/companypage.handlebars', '#company-profiles');
+                populateView();
+                renderPortlet('resources/company.json', 'javascripts/companypage.handlebars', '#company-profiles');
             });
         </script>
   </body>
