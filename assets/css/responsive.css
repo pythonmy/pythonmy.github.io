@@ -1,0 +1,181 @@
+@media screen and (min-width:992px) and (max-width:1024px){
+figcaption.image-content h4 {font-size: 17px;line-height:21px;margin-bottom:5px;}
+.news-section-box { padding: 24px;}
+.news-section-box h1 {font-size: 20px;margin-bottom: 10px;}
+.news-detail p {font-size: 12px;margin-bottom: 3px;}
+section.about-lists.event-card.white-space-style {padding-top: 0px;padding-bottom: 90px;margin-bottom: 50px;}
+section.counts.section-bg.community-section {padding-bottom: 50px;padding-top: 50px;}
+.icon-box {
+    padding: 0 20px;
+}
+.news-section-box h1 {font-size: 21px;margin-bottom: 10px;}
+}
+
+@media screen and (max-width:991px){
+.news-slider.banner-slider .slick-slide, .news-slider.banner-slider .slide{height:auto; min-height:auto;}
+.news-slider.banner-slider .slick-slide{height:auto !important; }
+.news-slider.banner-slider {
+   height:auto !important;
+}	
+	
+	
+.icon-box {
+    padding: 0 20px;
+}	
+.news-section-box h1 {font-size: 24px;margin-bottom: 10px;}
+.about-lists .Event-card h4 {font-size: 15px;line-height: 19px;}
+	section.about-lists.event-card.white-space-style {
+    padding-top: 0px;
+    padding-bottom: 90px;
+    margin-bottom: 50px;
+}
+section.counts.section-bg.community-section {padding-bottom: 60px;padding-top: 60px;}
+	
+button.navbar-toggler:focus {
+    outline: 0;
+}	
+span.navbar-toggler-icon.bg-img {
+    background-image: none;
+}
+span.navbar-toggler-icon.bg-img i {
+    color: #fff;
+    line-height: 20px;
+    right: 0;
+}
+button.navbar-toggler {
+    padding-right: 0 !important;
+    padding-top: 4px !important;
+}	
+ul.navbar-nav.left-menu-lis {
+    margin-left: 0;
+}
+.navbar-light .navbar-toggler {
+    color: none;
+    border-color: inherit;
+    border: 0;
+}
+ul.navbar-nav.left-menu-lis li a {padding: 10px 15px 0 0;font-size: 18px;}	
+	
+#header .logo img {
+    padding: 0;
+    margin: 0;
+    max-width: 246px;
+}
+.mobile-nav-toggle {right:0px;top: 14px;}
+.icon-box {
+    padding: 0 10px;
+}	
+section.new_banner {
+    padding:30px 0;
+}
+.slide {height: 255px;}	
+.banner-slider .slide {background-position: top center;background-size: 100% !important;height:255px;}
+.banner-slider {height:255px !important;}
+.banner-slider .slick-slide {height:255px !important}
+#header{background-image:none;}
+.right-login-nav {margin-left: 0;float: left;}
+.right-login-nav li .signin-button {border:0px #fff solid;width: 104px;margin-left: 0;color: #fff !important; padding-left:0;}
+.mobile-nav li a {font-size: 14px !important;}
+.left-menu-list li.active a::after{display:none;}
+.right-login-nav li .signin-button {
+	margin-left: 0 !important; padding-left:0;
+}
+.section-title h2 {
+    font-size: 25px;
+}
+.search-form input { width: 76%;}
+.search-form {
+    padding: 10px 21px 0 0;
+}
+figcaption.image-content {
+    float: left;
+    width: 100%;
+}
+
+figure.image-card {
+    float: left;
+    width: 100%;
+}
+figure.image-card img {
+    width: 100%;
+    height: 180px;
+}
+h1.text-light {
+    padding: 0px 0 0;
+    margin-bottom: 0;
+}
+}
+
+
+@media screen and (max-width:767px){
+#header {border-bottom: 5px #ffd343 solid;}	
+.news-detail {margin-bottom: 15px;}	
+a.navbar-brand img {
+    max-width: 242px;
+}
+section.counts.section-bg.community-section {
+    
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.news-slider.banner-slider .slick-slide, .news-slider.banner-slider .slide{height:auto; min-height:auto;}
+.news-slider.banner-slider .slick-slide{height:auto !important; }
+.news-slider.banner-slider {
+   height:auto !important;
+}
+.news-section-box {margin-top: 30px;}
+	.news-section-box {
+    margin-top: 30px;
+    min-height: auto;
+}	
+section.about-lists.event-card.white-space-style {
+   margin-bottom: 10px;
+}	
+.banner-slider .slide {background-position: top center;background-size: 100% !important;height:230px;}
+.banner-slider {height:230px !important;}
+.banner-slider .slick-slide {height:230px !important}
+section.new_banner {
+    padding: 15px 0;
+}
+
+#preloader #status {
+width: 240px;
+height: 240px;
+transform: translate( 0 44%);
+right: 0;
+margin: 0 auto;
+top: 33%;
+}
+.mobile-order {
+    order: 2;
+}
+
+figcaption.image-content {
+    float: left;
+    width: 100%;
+}
+figure.community-img {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.community-detail {
+
+    padding: 25px 20px;
+     float:none;
+}
+.icon-box p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+figure.image-card {
+    float: left;
+    width: 100%;
+}
+figure.image-card img {
+    width: 100%;
+	height:auto;
+}
+
+}
