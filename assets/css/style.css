@@ -156,8 +156,10 @@ section.counts.section-bg.community-section {
 }
 .community-detail {
     background: #fff;
-    padding:25px;
+    padding: 25px;
     float: left;
+    width: 100%;
+    border-bottom: 1px #ddd solid;
 }
 figure.community-img {
     float: left;
