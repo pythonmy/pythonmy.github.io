@@ -1,110 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Python Malaysia</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cerulean/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="stylesheets/justified-nav.css" rel="stylesheet">
-		<link href="stylesheets/style.css" rel="stylesheet">
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-
-    <body>
-
-        <div class="container">
-
-            <div class="masthead">
-                <h1>Python Malaysia </h1>
-                <ul class="nav nav-justified">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Training Providers</a></li>
-                    <li><a href="jobs.html">Job Opportunities</a></li>
-                    <li><a href="about.html">About Python</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1>Welcome to Python Malaysia!</h1>
-                <p class="lead">Welcome to Python Malaysia User Group Portal. We are users of the Python Programming Language mostly based in Kuala Lumpur, Malaysia.</p>
-                <p><a class="btn btn-lg btn-success" href="about.html" role="button">Get started on Python today!</a></p>
-            </div>
-
-            <!-- Example row of columns -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Python Malaysia</title>
+      <meta content="" name="descriptison">
+      <meta content="" name="keywords">
+      <link href="assets/img/fev-icon.png" rel="icon">
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link href="assets/css/responsive.css" rel="stylesheet">
+      <link href="assets/css/slick.css" rel="stylesheet">
+      <link href="assets/css/slick-theme.css" rel="stylesheet">
+      <link href="assets/icofont/icofont.min.css" rel="stylesheet">
+      <!-- CSS -->
+      <!--GOOGLE-FONTS-->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" >
+      <!--GOOGLE-FONTS-->
+   </head>
+   <body>
+      <div id="preloader"></div>
+      <header id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <h1 class="text-light"><a href="index.html"class="navbar-brand"><img src="assets/img/logo.png" alt=""></a></h1>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon bg-img"><i class="icofont-navigation-menu"></i></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 left-menu-lis">
+                     <li class="active"><a href="#about" class="">About</a></li>
+                     <li><a href="#event">Event</a></li>
+                     <li><a href="#community">Communities
+                        </a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="search-form">
+                        <input type="text" placeholder="">
+                        <button type="submit"><i class="icofont-search"></i></button>
+                     </div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- ======= Hero Section ======= -->
+      <section class="new_banner">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <h2>Malaysian companies using Python</h2>
-                    <p class="text-danger">In no particular order: </p>
-                    <ul id="companies">
-                    </ul>
-                    <p><a class="btn btn-primary" href="company.html" role="button">More companies &raquo;</a></p>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h2>Malaysians using Python</h2>
-                    <p class="text-danger">In no particular order: </p>
-                    <ul id="people">
-                    </ul>
-                    <p><a class="btn btn-primary" href="people.html" role="button">More dev people &raquo;</a></p>
-                </div>
-              
-                <div class="col-lg-4">
-                    <h2>Events</h2>
-                    <ul id="news">
-                    </ul>
-                    <p><a class="btn btn-primary" href="news.html" role="button">More events &raquo;</a></p>
-                </div>
+               <div class="col-md-6 mobile-order">
+                  <div class="news-section-box">
+                     <h1>Latest <span class="seprator-color">News</span></h1>
+                     <div class="news-slider banner-slider">
+					 <div class="news-detail">
+                        <figure class="image-card">
+                           <img src="assets/img/python-logo.svg.png" alt="news">
+                        </figure>
+                        <figcaption class="image-content">
+                           <h4>Python 3.8.4rc1 ready for testing
+                           </h4>
+                           <p class="day-time"><span class="day-sep">admin</span>July 1, 2020</p>
+                           <p class="paargraph-title">
+                           Help us test #Python 3.8.4rc1 before it becomes 3.8.4 in two weeks! Get it here:
+                           </p>
+			    <a class="paargraph-title" href="https://www.python.org/downloads/release/python-384rc1/">
+                           https://www.python.org/downloads/release/python-384rc1/
+                           </a>
+                           <p class="paargraph-title">
+                           It's a smaller release than the first 3 bugfix releases. At 130 commits between 3.8.3 and 3.8.4rc1 that's 20% fewer. <a href ="https://mobile.twitter.com/llanga/status/1278005571334086656">Python 3.8 is maturing!</a>
+                           </p>
+                        </figcaption>
+                     </div>
+                     <div class="news-detail">
+                        <figure class="image-card">
+                           <img src="assets/img/pyconmy-logo.svg.png" alt="news">
+                        </figure>
+                        <figcaption class="image-content">
+                           <h4>
+                               Pycon APAC 2020 going online
+                           </h4>
+                           <p class="day-time"><span class="day-sep">admin</span>July 1, 2020</p>
+                           <p class="paargraph-title">
+                            Due to Covid-19, PyCon APAC 2020 is going online.
+                           </p>
+                           <p class="paargraph-title">
+                            Conference Date
+                            19th and 20th September 2020
+                           </p>
+			   <a class="paargraph-title" href="https://pycon.my">
+			     https://pycon.my/
+                           </a>
+                        </figcaption>
+                     </div>
+					  <div class="news-detail">
+                        <figure class="image-card">
+                           <img src="assets/img/python-logo.svg.png" alt="news">
+                        </figure>
+                        <figcaption class="image-content">
+                           <h4>
+                               Google Summer of Code (GSoC) 2020 projects announced
+                           </h4>
+                           <p class="day-time"><span class="day-sep">admin</span>May 4, 2020</p>
+                           <p class="paargraph-title">
+                           Accepted projects for GSoC 2020 announced. Follow progress of Python related projects at <a class="paargraph-title" href="https://blogs.python-gsoc.org/en/">https://blogs.python-gsoc.org/en/</a>
+                           </p>
+                        </figcaption>
+                     </div>
+					 </div>
+                  </div>
+                 
+               </div>
+               <div class="col-md-6">
+                  <div class="banner-slider slider">
+                     <div>
+                        <div style="background-image: url('./assets/img/banner.png'); background-size:cover" class="slide"></div>
+                     </div>
+                     <div>
+                        <div style="background-image: url('./assets/img/banner2.png'); background-size:cover" class="slide"></div>
+                     </div>
+                     <div>
+                        <div style="background-image: url('./assets/img/banner3.png'); background-size:cover" class="slide">
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <!-- Site footer -->
-            <div class="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-				</ul>
-				
-				<ul class="copyright">
-               <li>&copy; 2014 - PYTHON MALAYSIA USER GROUP</li>
-               <li>Python.my domain sponsored by <a href="http://kursus.my"><img style="height:30px" src="logo_trainingmy.png"/></a></li>
-				</ul>
+         </div>
+      </section>
+      <!-- End Hero -->
+      <main id="main">
+         <!-- ======= About Us Section ======= -->
+         <section id="about" class="about white-space-style">
+            <div class="container">
+               <div class="row no-gutters">
+                  <div class="col-lg-12  about-content">
+                     <div class="section-title " data-aos="fade-up" data-aos-delay="100">
+                        <h2>About Python <span class="change-color">Malaysia</span></h2>
+                     </div>
+                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                         <p>Welcome to Python Malaysia User Group Portal. We are users of the <a href="https://www.python.org/">Python</a> Programming Language mostly based in Kuala Lumpur, Malaysia.</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        
-        </div> <!-- /container -->
-
-
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="javascripts/ie10-viewport-bug-workaround.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
-        <script src="javascripts/main.js"></script>
-        <script>
-            $(document).ready(function() {
-                var hdbartpls = ['javascripts/companyportlet.handlebars', 'javascripts/peopleportlet.handlebars', 'javascripts/newsportlet.handlebars'];
-                var sources = ['resources/company.json', 'resources/people.json', 'resources/news.json'];
-                var portletels = ['#companies', '#people', '#news'];
-
-                renderPortlet(sources[0], hdbartpls[0], portletels[0]);
-                renderPortlet(sources[1], hdbartpls[1], portletels[1]);
-                renderPortlet(sources[2], hdbartpls[2], portletels[2]);
-            });
-        </script>
+         </section>
+         <!-- End About Us Section -->
+         <!-- ======= About Lists Section ======= -->
+         <section class="about-lists event-card white-space-style" id="event">
+            <div class="container">
+                <div class="section-title">
+                  <h2>Events Python <span class="change-color">Malaysia</span></h2>
+               </div>
+               <div class="regular slider">
+                  <div class="Event-card">
+                     <div class="event-img">
+                        <figure class="event">
+                           <img src="assets/img/pyconmy-2019.png">
+                        </figure>
+                        <div class="content-inner">
+                           <p class="evet-date"><i class="icofont-calendar"></i> 04 July – 05 July</p>
+                           <h4>PyconMY 2019
+                           </h4>
+                           <p>
+                            2019 edition of PyCon MY was held at Training room for rent in KL (The iSpace), Kuala Lumpur starting on 24th August. It is a 2 day event organised by Python Malaysia community.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Event-card">
+                     <div class="event-img">
+                        <figure class="event">
+                           <img src="assets/img/pyconapac-2017.jpg">
+                        </figure>
+                        <div class="content-inner">
+                           <p class="evet-date"><i class="icofont-calendar"></i> 26 Aug – 27 Aug</p>
+                           <h4>PyCon APAC 2017
+                           </h4>
+                           <p>
+                            It’s a wrap! We’ve ended our annual PyCon APAC 2017 which was hosted in Nexus, Bangsar South, Kuala Lumpur
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Event-card">
+                     <div class="event-img">
+                        <figure class="event">
+                           <img src="assets/img/banner.png">
+                        </figure>
+                        <div class="content-inner">
+                           <p class="evet-date"><i class="icofont-calendar"></i> 04 July – 05 July</p>
+                           <h4>EuroPython 2020 (in-person: can
+                              celed, considering going virtual)
+                           </h4>
+                           <p>The Python Package Index (PyPI) hosts thousa
+                              nds ofthird-party modules for Pyth on. Both Pyth
+                              n's standard library and the community-contribu
+                              ed modules allow for endless possibilities.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End About Lists Section -->
+         <!-- ======= Counts Section ======= -->
+         <section class="counts section-bg community-section" id="community">
+            <div class="container">
+               <div class="row">
+                  <div class="section-title ">
+                     <h2>Community Python <span class="change-color">Malaysia</span></h2>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="community-detail">
+                        <figure class="community-img">
+                           <img src="assets/img/python-malaysia-fb.png">
+                        </figure>
+                        <figcaption class="community-caption">
+                           <h3>Python Malaysia FB User Group</h3>
+                           <p>Join like minded Python enthuasiast on FB.
+                           </p>
+                           <a href="https://www.facebook.com/groups/python.malaysia/">https://www.facebook.com/groups/python.malaysia/</a>
+                        </figcaption>
+                    </div>
+                     <div class="community-detail">
+                        <figure class="community-img">
+                           <img src="assets/img/belajarpythonbot.png">
+                        </figure>
+                        <figcaption class="community-caption">
+                           <h3>Belajar Python Telegram Group</h3>
+                           <p>
+                            Ingin mula belajar Python? Sertai group Telegram kami untuk sama-sama memulakan kembara anda dalam dunia Python.
+                           </p>
+                           <a href="https://telegram.me/belajarpythonbot">https://telegram.me/belajarpythonbot</a>
+                        </figcaption>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Counts Section -->
+      </main>
+      <!-- End #main -->
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 footer-info">
+                     <p>
+                     © 2020 Python Malaysia User Group | python.my domain sponsored by <img style="height: 30px;" src="assets/img/logo_trainingmy.png" />
+                     </p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 footer-info text-right">
+                     <div class="social-links">
+                        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                        <a href="#" class="instagram"><i class="icofont-youtube-play"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="assets/js/jquery-proper.min.js" ></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/function.js"></script>
     </body>
 </html>
