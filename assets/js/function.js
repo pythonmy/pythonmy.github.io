@@ -37,7 +37,7 @@
          	 arrows: false,
          	 infinite: true,
          	 speed: 2500,
-         	 autoplay: true,
+                 autoplay: false,
          	 autoplaySpeed: 2500,
          	 fade:true,
          	 pauseOnHover: false
