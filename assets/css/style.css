@@ -628,6 +628,7 @@ figure.event img {
 .Event-card {
     border: 1px #ddd solid;
     border-radius: 9px;
+    min-height: 469px;
 }
 section.about-lists.event-card.white-space-style {
     padding-top: 40px;
