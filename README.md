@@ -29,4 +29,4 @@ Thanks go to these wonderful [![All Contributors](https://img.shields.io/badge/9
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/sweemeng"><img src="https://avatars.githubusercontent.com/u/80779?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
-      <td align="center"><a href="https://github.com/sweemeng"><img src="https://avatars.githubusercontent.com/u/80779?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
+      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
