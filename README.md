@@ -23,7 +23,7 @@ How to contribute content
 7. Do a pull request from your fork so that the admins of pythonmy may accept or reject your changes.
 
 ## Contributors ✨
-Thanks go to these wonderful [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors) people
+Thanks go to these wonderful [![All Contributors](https://img.shields.io/badge/peoples-9-orange.svg?style=flat-square)](#contributors) people
 
 <table>
   <tbody>
