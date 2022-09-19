@@ -25,4 +25,10 @@ How to contribute content
 ## Contributors ✨
 Thanks go to these wonderful people
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors)
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/sweemeng"><img src="https://avatars.githubusercontent.com/u/80779?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
+      <td align="center"><a href="https://github.com/sweemeng"><img src="https://avatars.githubusercontent.com/u/80779?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
