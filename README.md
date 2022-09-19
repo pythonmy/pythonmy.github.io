@@ -25,4 +25,4 @@ How to contribute content
 ## Contributors ✨
 Thanks go to these wonderful people
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors)
