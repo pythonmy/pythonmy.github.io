@@ -30,11 +30,11 @@ Thanks go to these wonderful [![All Contributors](https://img.shields.io/badge/9
     <tr>
       <td align="center"><a href="https://github.com/sweemeng"><img src="https://avatars.githubusercontent.com/u/80779?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sweemeng</b></sub></a></td>
       <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
+      <td align="center"><a href="https://github.com/k4ml"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>k4ml</b></sub></a></td>
+      <td align="center"><a href="https://github.com/kagesenshi"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>kagesenshi</b></sub></a></td>
+      <td align="center"><a href="https://github.com/angch"><img src="https://avatars.githubusercontent.com/u/1099082?v=4=100" width="100px;" alt=""/><br /><sub><b>angch</b></sub></a></td>
+      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/147330?v=4=100" width="100px;" alt=""/><br /><sub><b>renyi</b></sub></a></td>
+      <td align="center"><a href="https://github.com/lowks"><img src="https://avatars.githubusercontent.com/u/517395?v=4=100" width="100px;" alt=""/><br /><sub><b>lowks</b></sub></a></td>
     </tr>
     <tr>
       <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
