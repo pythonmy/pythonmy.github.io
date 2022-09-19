@@ -37,7 +37,7 @@ Thanks go to these wonderful [![All Contributors](https://img.shields.io/badge/9
       <td align="center"><a href="https://github.com/lowks"><img src="https://avatars.githubusercontent.com/u/517395?v=4=100" width="100px;" alt=""/><br /><sub><b>lowks</b></sub></a></td>
     </tr>
     <tr>
-      <td align="center"><a href="https://github.com/mavjs"><img src="https://avatars.githubusercontent.com/u/881987?v=4s=100" width="100px;" alt=""/><br /><sub><b>mavjsg</b></sub></a></td>
+      <td align="center"><a href="https://github.com/linamikhail"><img src="https://avatars.githubusercontent.com/u/8586660?v=4=100" width="100px;" alt=""/><br /><sub><b>linamikhail</b></sub></a></td>
       <td align="center"><a href="https://github.com/g3nj1z"><img src="https://avatars.githubusercontent.com/u/50061857?v=4=100" width="100px;" alt=""/><br /><sub><b>g3nj1z</b></sub></a></td>
       </tr>
    </tbody>
